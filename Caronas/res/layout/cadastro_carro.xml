@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/cabecalho"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:background="#2E7D32"
+    	android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cadastro_txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/cadastro_txt_title_motorista"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"  />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/conteudo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+
+        android:background="#DCEDC8"
+        android:orientation="vertical" >
+
+   	    <TextView
+   	        android:id="@+id/cadastro_txt_fabricante"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginTop="10dp"
+   	        android:layout_marginLeft="5dp"
+   	        android:text="@string/cadastro_txt_fabricante"
+   	        android:textAppearance="?android:attr/textAppearanceLarge" />
+   	    
+   	    <EditText
+   	        android:id="@+id/cadastro_field_fabricante"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+   	        android:ems="10"
+   	        android:padding="5dip"
+   	        android:hint="@string/cadastro_hint_fabricante"
+   	        android:background="@drawable/edittext_rounded"
+   	        android:inputType="text" />
+   	    
+        <TextView
+            android:id="@+id/cadastro_txt_modelo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadastro_txt_modelo"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/cadastro_field_modelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_modelo"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/cadastro_txt_cor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadastro_txt_cor"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/cadastro_field_cor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_cor"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/cadastro_txt_placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadastro_txt_placa"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/cadastro_field_placa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_placa"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/cadastro_btn_cadastrar_veiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:minWidth="200dp"
+            android:background="@drawable/btn_rounded"
+            android:text="@string/cadastro_btn_cadastrar_veiculo"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickCadastrarVeiculo" />
+        
+    </LinearLayout>
+</LinearLayout>

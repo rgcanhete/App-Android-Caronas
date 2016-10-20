@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/geral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:id="@+id/superior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="#43A047"
+        >
+
+        <Button
+            android:id="@+id/cadastro_escolha_btn_passageiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:minHeight="70dp"
+            android:minWidth="256dp"
+            android:background="@drawable/btn_rounded"
+            android:text="@string/cadastro_txt_escolha_passageiro" 
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickCadastroPassageiro"/>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/inferior"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="#FFEB3B"
+        >
+
+        <Button
+            android:id="@+id/cadastro_escolha_btn_motorista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="20dp"
+            android:minHeight="70dp"
+            android:minWidth="256dp"
+            android:background="@drawable/btn_rounded"
+            android:text="@string/cadastro_txt_escolha_motorista"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickCadastroMotorista" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:id="@+id/cabecalho"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:background="#2E7D32"
+    	android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cadastro_txt_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="@string/cadastro_txt_title_usuario"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"  />
+        
+    </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        
+   	<LinearLayout
+        android:id="@+id/conteudo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#DCEDC8"
+        android:orientation="vertical" >
+
+   	    <TextView
+   	        android:id="@+id/cadastro_txt_nome"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginTop="10dp"
+   	        android:layout_marginLeft="5dp"
+   	        android:text="@string/cadastro_txt_nome"
+   	        android:textAppearance="?android:attr/textAppearanceLarge" />
+   	    
+   	    <EditText
+   	        android:id="@+id/cadastro_field_nome"
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+   	        android:background="@drawable/edittext_rounded"
+   	        android:ems="20"
+   	        android:hint="@string/cadastro_hint_nome"
+   	        android:inputType="textPersonName"
+   	        android:padding="5dip" />
+   	    
+        <TextView
+            android:id="@+id/cadastro_txt_nasc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadastro_txt_nasc"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/cadastro_field_nasc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_nasc"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/cadastro_txt_ingresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadastro_txt_ingresso"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/cadastro_field_ingresso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_ingresso"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/cadastro_txt_ra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadastro_txt_ra"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/cadastro_field_ra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_ra"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/cadastro_txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadatro_txt_email"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp" />
+
+        <EditText
+            android:id="@+id/cadastro_field_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_email"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:id="@+id/cadastro_txt_senha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/cadatro_txt_senha"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:paddingTop="20dp"/>
+
+        <EditText
+            android:id="@+id/cadastro_field_senha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+   	        android:layout_marginRight="5dp"
+            android:ems="10"
+            android:padding="5dip"
+            android:hint="@string/cadastro_hint_senha"
+   	        android:background="@drawable/edittext_rounded"
+            android:inputType="textPassword"/>
+        
+        <Button
+            android:id="@+id/cadastro_btn_cadastrar_veiculo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:minWidth="200dp"
+            android:background="@drawable/btn_rounded"
+            android:text="@string/cadastro_btn_cadastrar"
+            android:textColor="#FFFFFF"
+            android:onClick="onClickCadastrarUsuario" />
+        
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>
